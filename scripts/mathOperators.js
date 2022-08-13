@@ -61,6 +61,42 @@ function mathOperators(){
     console.log(c) // 5
 
     // Сокращенная арифметика с присваиванием 
+    let n = 2;
+    n = n + 5;
+    n = n * 2;
+    console.log(n) // 14
+
+    let m = 2;
+    m += 5;
+    m *= 2;
+    console.log(m) // 14
+
+    let d = 2;
+    d *= 3 + 5;
+    console.log(d) // 16
+
+    d += 2 * 5;
+    console.log(d) // 26
+
+    // Инкремент - увеличение на одну единицу
+    // Декремент - уменьшение на одну единицу
+    let plusCounter = 5;
+    plusCounter++;
+    console.log(plusCounter) // 6
+    let minusCounter = 5;
+    minusCounter--;
+    console.log(minusCounter) // 4
+
+    let counter = 1;
+    // Возвращает значение до увеличения
+    console.log(counter++) // 1
+    counter = 1;
+    // Возвращает значение после увеличения
+    console.log(++counter) // 2
+
+    // Запятая
+    let num = (1 + 2, 3 + 4)
+    console.log(num) // 7, возвращает результат только последнего выражения
 
 }
 mathOperators();
